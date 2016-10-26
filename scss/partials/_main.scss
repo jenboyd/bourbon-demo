@@ -1,0 +1,17 @@
+main {
+  background: blue;
+  color: contrast-switch(blue, #fff, #222);
+  @include outer-container;
+  @include margin(1rem null 1rem null);
+  @include padding(1rem 1rem 1rem 1rem);
+  // @include span-columns(8 of 12);
+
+
+  .box {
+    @include outer-container;
+    @include size(20rem);
+    background: white;
+    @include margin(1rem null 1rem null);
+    @include span-columns(4 of 12);
+  };
+};
